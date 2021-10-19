@@ -19,64 +19,55 @@
         </div>
         <button>Sign Out</button>
     </div>
-
-
     <div id="main-container">
         <div class="seperate">
             <div class="container1">
                 <div class="color-block"></div>
-                    <img src="./images/alayne-s.jpg" alt="empty profile picture" class="profile-pic">
-                    <h1>Jane Doe</h1>
-                    <div class="location">
-                        <img src="./icons/map-marker.png" alt="map map marker" class="map-marker">
-                        <h2>Seattle</h2>
-                    </div>
-                    <p>Developer | Engineer | Problem Solver</p>
-                    <p>Master of shadows and the Internet!</p>
-                    <div class="editor">
-                        <img src="./icons/gear.png" alt="gear icon" class="edit-gear">
-                        <a href="">edit profile</a>
-                    </div>
+                <img src="./images/alayne-s.jpg" alt="empty profile picture" class="profile-pic">
+                <h1 id="profile-name">Jane Doe</h1>
+                <div class="location">
+                    <img src="./icons/map-marker.png" alt="map map marker" class="map-marker">
+                    <h2>Seattle</h2>
+                </div>
+                <p>Developer | Engineer | Problem Solver</p>
+                <p>Master of shadows and the Internet!</p>
+                <div class="editor">
+                    <img src="./icons/gear.png" alt="gear icon" class="edit-gear">
+                    <a onclick="nameChange()" href="">edit profile</a>
+                </div>
             </div>
-
             <div class="container2">
-
                 <div class="color-block2">
                     <i class="fa-solid fa-2">2</i>
                     <h2>Connection Requests</h2>
                 </div>
                 <div class="inner-contain">
-                        <img src="./images/anne-s.jpg" alt="picture of girl" class="small-img">
-                        <h2>Anne S</h2>
+                    <img src="./images/anne-s.jpg" alt="picture of girl" class="small-img">
+                    <h2 id="name">Anne S</h2>
                     <div>
-                        <img src="https://img.icons8.com/ios-filled/50/000000/ok--v1.png"/ class="icons">
-                        <img src="https://img.icons8.com/ios-filled/50/000000/circled-x.png"/ class="icons">
+                        <img onclick="remove(); press1()" src="https://img.icons8.com/ios-filled/50/000000/ok--v1.png"/ class="icons" id="add">
+                        <img onclick="remove(); press2()" src="https://img.icons8.com/ios-filled/50/000000/circled-x.png"/ class="icons" id="subtract">
                     </div>
                 </div>
-
                 <div class="inner-contain2">
                     <img src="./images/arry-s.jpg" alt="picture of girl" class="small-img">
                     <h2>Arry S</h2>
                     <div>
-                        <img src="https://img.icons8.com/ios-filled/50/000000/ok--v1.png"/ class="icons">
-                        <img src="https://img.icons8.com/ios-filled/50/000000/circled-x.png"/ class="icons">
+                        <img onclick="removeAgain(); press1()" src="https://img.icons8.com/ios-filled/50/000000/ok--v1.png"/ class="icons" id="add">
+                        <img onclick="removeAgain(); press2()" src="https://img.icons8.com/ios-filled/50/000000/circled-x.png"/ class="icons" id="subtract">
                     </div>
                 </div>
             </div>
         </div>   
-
         <div class="container3">
-            <div class="color-block2">
-                <h2>Education</h2>
-            </div>
+            <h2 class="color-block2">Education</h2>
             <h2>Coding Dojo - Full Stack Bootcamp</h2>
             <p class="fade">Dec 2019 - Mar 2020</p>
             <p>Triple black belt in Python, MERN, and C#...</p>
         </div>
-
         <div class="container4">
             <div class="color-block2">
-                <i class="fa-solid fa-2 second-i">500+</i>
+                <i class="fa-solid fa-2 second-i"><span id="count">500</span>+</i>
                 <h2>Your Connections</h2>
             </div>
             <div class="inner-contain">
@@ -95,7 +86,7 @@
                     <img src="https://img.icons8.com/ios-filled/50/000000/circled-x.png"/ class="icons">
                 </div>
             </div>
-            <div class="inner-contain3">
+            <div class="inner-contain2">
                 <img src="./images/phil-s.jpg" alt="picture of boy" class="small-img">
                 <h2>Phil S</h2>
                 <div>
@@ -103,7 +94,7 @@
                 <img src="https://img.icons8.com/ios-filled/50/000000/circled-x.png"/ class="icons">
                 </div>
             </div>
-            <div class="inner-contain4">
+            <div class="inner-contain2">
                 <img src="./images/jane-m.jpg" alt="picture of girl" class="small-img">
                 <h2>Jane M</h2>
                 <div>
@@ -114,5 +105,6 @@
             <a class= "view" href="">View More</a>
         </div> 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

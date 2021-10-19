@@ -206,22 +206,6 @@ p.fade {
     padding-left: 5px;
 }
 
-.inner-contain3 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 245px;
-    margin-top: 15px;
-}
-
-.inner-contain4 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 245px;
-    margin-top: 15px;
-}
-
 .container4 .icons {
     display: none;
 }
